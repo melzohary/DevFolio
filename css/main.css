@@ -1,0 +1,676 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+:root{
+    --fonto : system-ui,
+        -apple-system,
+        "Segoe UI",
+        Roboto,
+        "Helvetica Neue",
+        Arial,
+        "Noto Sans",
+        "Liberation Sans",
+        sans-serif,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        "Noto Color Emoji";
+        --selv: rgba(204, 204, 204, 0.178); 
+}
+
+.bg-selv{
+    background-color: var(--selv);
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/* ============== NavBar ============ */
+nav{
+    background-color:#181818 !important;
+    color: #fff !important;
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+nav button span{
+    color:#fff !important;
+    font-size:25px;
+}
+
+.navbar-brand{
+    font-size:27px;
+    font-weight: bold;
+    color: #fff !important;
+}
+
+.nav-item{
+   margin: 10px;
+   transition: all 0.3s;
+}
+
+.nav-item .nav-link{
+color: #fff !important;
+font-size: 14px;
+}
+
+.active .line1{
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.nav-item .line{
+    width:0%;
+    height:2px;
+    background-color:#fff;
+    border-radius:5px;
+    transition:all 0.7s;
+}
+
+.nav-item:hover .line{
+    width:100% !important;
+}
+
+@media screen and (max-width:500px){
+.navbar-brand {
+        font-size: 24px;
+        font-weight: bold;
+        color: #fff !important;
+    }
+    
+    nav i{
+        font-size:19px;
+    }
+
+    .nav-item {
+    margin: 5px;
+    }
+}
+   
+
+ /* =================  Home ============= */
+
+ .home{
+    background-image: url(../DevFolio-img/pexels-cottonbro-studio-6153354.jpg) ;
+    height: 100vh !important;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    width: 100%;
+ }
+
+ .home::after{
+    content:"";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100% !important;
+    width: 100%;
+    background-color: #000000d2;
+ }
+
+ .home .home-caption{
+    position:absolute;
+    top: 35%;
+    z-index: 1;
+ }
+
+ .home .home-caption h1{
+    font-size: 70px;
+    margin-bottom: 15px;
+    font-family: system-ui,
+        -apple-system,
+        "Segoe UI",
+        Roboto,
+        "Helvetica Neue",
+        Arial,
+        "Noto Sans",
+        "Liberation Sans",
+        sans-serif,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        "Noto Color Emoji";
+ }
+
+ .home .home-caption p{
+    font-size: 40px;
+    font-weight: 500;
+    font-family: system-ui,
+        -apple-system,
+        "Segoe UI",
+        Roboto,
+        "Helvetica Neue",
+        Arial,
+        "Noto Sans",
+        "Liberation Sans",
+        sans-serif,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        "Noto Color Emoji";
+ }
+
+ @media screen and (max-width:800px){
+    .home-caption h1{
+        font-size: 55px !important;
+    }
+
+    .home-caption p{
+        font-size: 30px !important;
+    }
+ }
+
+ @media screen and (max-width:600px){
+    .home-caption h1{
+        font-size: 45px !important;
+    }
+
+    .home-caption p{
+        font-size: 20px !important;
+    }
+ }
+
+ @media screen and (max-width:455px){
+    .home-caption h1{
+        font-size: 30px !important;
+    }
+
+    .home-caption p{
+        font-size: 20px !important;
+    }
+ }
+
+ @media screen and (max-width:300px){
+    .home-caption h1{
+        font-size: 23px !important;
+    }
+
+    .home-caption p{
+        font-size: 16px !important;
+    }
+ }
+
+ .home-caption p:after{
+content:" ";
+animation-name:typing;
+animation-duration: 16s;
+animation-iteration-count: infinite;
+}
+@keyframes typing{
+0%{content: "|"}
+1%{content: "D|"}
+2%{content: "De|"}
+3%{content: "Dev|"}
+4%{content: "Devl|"}
+5%{content: "Devle|"}
+6%{content: "Devlep|"}
+7%{content: "Devlepo|"}
+8%{content: "Devloper|"}
+9%{content: "Devlope|"}
+10%{content: "Devlop|"}
+11%{content: "Devlo|"}
+12%{content: "Devl|"}
+13%{content: "Dev|"}
+14%{content: "De|"}
+15%{content: "D|"}
+16%{content: "|"}
+17%{content: "F|"}
+18%{content: "Fr|"}
+19%{content: "Fre|"}
+20%{content: "Free|"}
+21%{content: "FreeM|"}
+22%{content: "FreeMa|"}
+23%{content: "FreeMan|"}
+24%{content: "FreeMa|"}
+25%{content: "FreeM|"}
+26%{content: "Free|"}
+27%{content: "Fre|"}
+28%{content: "Fr|"}
+29%{content: "F|"}
+30%{content: "|"}
+31%{content: "F|"}
+32%{content: "Fr|"}
+33%{content: "Fre|"}
+34%{content: "Free|"}
+35%{content: "Freel|"}
+36%{content: "Freela|"}
+37%{content: "Freelan|"}
+38%{content: "Freelanc|"}
+39%{content: "Freelance|"}
+40%{content: "Freelancer|"}
+41%{content: "Freelance|"}
+42%{content: "Freelanc|"}
+43%{content: "Freelan|"}
+44%{content: "Freela|"}
+45%{content: "Freel|"}
+46%{content: "Free|"}
+47%{content: "Fre|"}
+48%{content: "Fr|"}
+49%{content: "F|"}
+50%{content: "|"}
+51%{content: "D|"}
+52%{content: "De|"}
+53%{content: "Des|"}
+54%{content: "Desi|"}
+55%{content: "Desig|"}
+56%{content: "Design|"}
+57%{content: "Designe|"}
+58%{content: "Designer|"}
+59%{content: "Designe|"}
+60%{content: "Design|"}
+61%{content: "Desig|"}
+62%{content: "Desi|"}
+63%{content: "Des|"}
+64%{content: "De|"}
+65%{content: "D|"}
+67%{content: "|"}
+68%{content: "P|"}
+69%{content: "Ph|"}
+70%{content: "Pho|"}
+71%{content: "Phot|"}
+72%{content: "Photo|"}
+73%{content: "Photog|"}
+74%{content: "Photogr|"}
+75%{content: "Photogra|"}
+76%{content: "Photograp|"}
+77%{content: "Photograph|"}
+78%{content: "Photography|"}
+79%{content: "Photograph|"}
+81%{content: "Photograp|"}
+82%{content: "Photogra|"}
+83%{content: "Photogr|"}
+84%{content: "Photog|"}
+85%{content: "Photo|"}
+86%{content: "Phot|"}
+87%{content: "Pho|"}
+88%{content: "Ph|"}
+89%{content: "P|"}
+90%{content: "|"}
+91%{content: "9|"}
+92%{content: "9 Y|"}
+93%{content: "9 Ye|"}
+94%{content: "9 Yea|"}
+95%{content: "9 Year|"}
+96%{content: "9 Years|"}
+97%{content: "9 Year|"}
+98%{content: "9 Yea|"}
+99%{content: "9 Ye|"}
+100%{content: "|"}
+}
+
+
+
+/* ========== ABOUT ============== */
+
+.progress {
+height: 10px;
+}
+
+.progress .progress-bar{
+height: 10px;
+border-radius: 30px;
+}
+
+.about-right h4{
+font-size: 23px;
+}
+
+.about-right p{
+    font-size: 19px;
+    font-weight: 200;
+    font-family: var(--fonto);
+}
+
+.about .container{
+    width: 80%;
+    box-shadow: 0.5px 0.5px 2px #ccc, -0.5px -0.5px 2px #ccc;
+    padding: 30px;
+    overflow: hidden;
+}
+
+.person-img img{
+    border-radius: 4px;
+}
+
+@media screen and (max-width:600px) {
+
+    .person-img{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .person-img-text{
+        margin-top: 25px;
+    }
+
+    .about .container{
+        width: 100%;
+        padding: 0 0;
+    }
+    
+}
+
+/* =============  SERVICES =========== */
+.heading h2{
+    font-size:37px;
+    font-weight: bold;
+    color: #000 !important;
+}
+
+.heading .heading-line{
+    width: 40px;
+    height: 5px;
+    background: #0078ff;
+    margin: auto;
+}
+
+.services-icon{
+    box-shadow: 0.5px 0.5px 2px #ccc, -0.5px -0.5px 2px #ccc;
+    border-radius: 10px;
+    padding: 60px 20px;
+    background-color: #fff !important;
+    transition: all 0.4s;
+}
+
+.services-icon i{
+    font-size: 40px;
+    color: #000 !important;
+    padding: 30px;
+    border: solid 9px #0078ff;
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+.services-icon:hover i{
+    color: #fff !important;
+    background-color: #0078ff !important;
+    border-color: #78ade9 !important;
+}
+
+/* ========== services-img ============== */
+.fixed-img{
+    background-image: url(../DevFolio-img/counters-bg.jpg);
+    min-height: 350px;
+    background-size:cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.fixed-img:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100% !important;
+    width: 100%;
+    background-color: #0077ffb2;
+}
+
+.services-img-icon{
+    position: relative;
+    z-index: 99;
+    color: #fff !important;
+}
+
+.services-img-icon i{
+    font-size: 40px;
+    color: #ffffff !important;
+    padding: 25px;
+    transition: all 0.4s;
+}
+
+.services-i{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    font-size: 2rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 0 10px #9ec5f1;
+    margin: 0 auto;
+    line-height: 1.55;
+    transition: all 0.8s ease;
+}
+
+/* ===== Portfolio ========= */
+
+.portfolio-img{
+width: 90%;
+background-color: #fff !important;
+border-radius: 8px;
+overflow: hidden;
+margin: auto;
+}
+
+.portfolio-img img{
+border-top-left-radius: 8px;
+border-top-right-radius: 8px;
+transition: all 0.6s;
+}
+
+.portfolio-img:hover img{
+transform: scale(1.4);
+}
+
+.portfolio-img p{
+font-size: 12px;
+}
+
+.portfolio-img .icon-port i{
+font-size: 27px;
+font-weight: 800 !important;
+background-color: #0078ff;
+color: #ffffff !important;
+border-radius: 50%;
+padding: 4px;
+}
+
+/* ============ Overlay ================ */
+
+.overlay{
+    background-image: url(../DevFolio-img/overlay-bg.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    min-height: 350px;
+    position: relative;
+}
+
+.overlay:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100% !important;
+    width: 100%;
+    background-color: #0077ffa6;
+}
+
+.cursor{
+    position: relative;
+    z-index: 99;
+    color: #fff !important;
+}
+
+.cursor2{
+    position: relative;
+    z-index: 99;
+    color: #fff !important;
+}
+
+.cursor img{
+    border-radius: 50%;
+    width: 15%;
+}
+
+.cursor2 img{
+    border-radius: 50%;
+    width: 15%;
+}
+
+.cursor-button button{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #9ec5f1 !important;
+    border: none;
+    position: relative;
+    z-index: 99;
+}
+
+/* ============== BLOG =============== */
+
+
+.card{
+    border-radius: 10px;
+    background-color: #fff !important;
+    margin: auto !important;
+}
+
+.card .card-img{
+    border-radius: 10px;
+}
+
+.blog .card .blue-text{
+    padding: 3px 3px;
+    border-radius: 5px;
+    background-color: #0078ff;
+    color: #fff;
+    width: 80px;
+    text-align: center;
+    margin: auto;
+    font-size: 14px;
+    margin-top: -15px
+}
+
+.blog-icon img{
+    border-radius: 50% !important;
+    width: 30px !important;
+}
+
+.blog-icon span{
+    font-size: 14px !important;
+}
+
+.blog-icon h6{
+    font-size: 14px !important;
+    margin-top: 5px;
+}
+
+.card-body p{
+    font-size: 14px;
+}
+
+/* =================  Contact  ===================== */
+
+.contact{
+    background-image: url(../DevFolio-img/overlay-bg.jpg);
+    background-size: 100% 100%;
+    min-height: 700px;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.contact:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100% !important;
+    width: 100%;
+    background-color: #0077ffa6;
+}
+
+.contact .container{
+    position: relative;
+    z-index: 99;
+    min-height: 550px ;
+    width: 85%;
+    border-radius: 4px;
+    padding: 30px;
+}
+
+.contact .contact-input input{
+    height: 50px;
+    border-radius: 3px;
+    padding: 5px;
+    border: 1px solid rgba(143, 141, 141, 0.815);
+    width: 100%;
+}
+
+.contact .contact-input textarea{
+    height: 100px;
+    border-radius: 3px;
+    width: 100%;
+    padding:5px;
+}
+
+.contact .contact-input .contact-btn .btn{
+    background-color: #0078ff !important;
+    color: #fff !important;
+    border-radius: 100px;
+    padding: 10px 20px;
+    font-size: 17px;
+    transition: all .5s;
+}
+
+.contact .contact-input .contact-btn .btn:hover{
+   background-color: #9ec5f1 !important;
+   border: #0078ff solid 4px;
+}
+
+.contact .contact-text p{
+  letter-spacing: 1px;
+  font-size: 17px;
+  font-weight: 200;
+  line-height: 2;
+}
+
+.contact-icon i{
+    font-size: 14px !important;
+    color: #0078ff !important;
+}
+
+.contact-icon span{
+    font-size: 14px !important;
+}
+
+.contact-social i{
+    font-size: 24px;
+    padding: 8px;
+    border-radius: 50%;
+    border:  solid 5px #9ec5f1;
+    margin: 7px ;
+    transition: all 0.9s;
+}
+
+.contact-social i:hover{
+    background-color: #0078ff;
+    color: #fff !important;
+}
+
+@media screen and (max-width:500px){
+    .contact .container{
+        width:100%;
+    }
+}
+
+/* =============== Footer ================ */
+
+.footer{
+    height:100px;
+    background-color:#0077ff;
+}
+
+.footer-p p{
+    font-size:14px ;
+}
